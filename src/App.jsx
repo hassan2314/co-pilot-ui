@@ -59,8 +59,6 @@ export default function App() {
 
   useEffect(() => {
     refreshHealth();
-    const id = setInterval(refreshHealth, 50000);
-    return () => clearInterval(id);
   }, []);
 
   async function onIngest(event) {
