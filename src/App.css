@@ -33,6 +33,13 @@ h3 {
   font-size: 1rem;
 }
 
+.hint {
+  margin: -4px 0 12px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.45;
+}
+
 .pills {
   display: flex;
   gap: 8px;
@@ -107,11 +114,22 @@ button:disabled {
   cursor: wait;
 }
 
+.chip-group {
+  margin: 0 0 12px;
+}
+
+.chip-label {
+  margin: 0 0 6px;
+  color: var(--muted);
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
 .chips {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  margin: 0 0 12px;
 }
 
 .chip {
@@ -121,6 +139,11 @@ button:disabled {
   font-size: 12px;
   font-weight: 400;
   padding: 6px 10px;
+}
+
+.chip-summary {
+  color: var(--accent);
+  border-color: #9bb8ae;
 }
 
 .ok {
@@ -137,11 +160,33 @@ button:disabled {
   padding: 10px 12px;
 }
 
+.result-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.result-head h2 {
+  margin: 0;
+}
+
+.badge {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 4px 10px;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 12px;
+  color: var(--muted);
+}
+
 .answer {
   font-family: "Source Serif 4", Georgia, serif;
   font-size: 1.15rem;
   line-height: 1.5;
   margin: 0 0 20px;
+  white-space: pre-wrap;
 }
 
 .cites,
@@ -187,7 +232,8 @@ code {
 
 @media (max-width: 640px) {
   .top,
-  .row {
+  .row,
+  .result-head {
     flex-direction: column;
     align-items: stretch;
   }
