@@ -1,0 +1,36 @@
+:root {
+  --ink: #1c1914;
+  --muted: #6b6458;
+  --paper: #f4efe6;
+  --card: #fffdf8;
+  --line: #d9d0c1;
+  --accent: #2f5d50;
+  --accent-ink: #f4efe6;
+  --danger: #8f2d2d;
+  --ok: #2f5d50;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at top right, #efe6d4 0%, transparent 42%),
+    var(--paper);
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
