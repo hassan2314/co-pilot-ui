@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Widget demo</title>
+    <style>
+      body {
+        margin: 0;
+        min-height: 100vh;
+        background: #f7f4ee;
+        color: #1c1914;
+        font-family: Georgia, serif;
+      }
+      main {
+        max-width: 640px;
+        margin: 0 auto;
+        padding: 64px 24px;
+      }
+      p { line-height: 1.5; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p>Example host page</p>
+      <h1>Your product site</h1>
+      <p>
+        This page stands in for a customer site. The button in the corner is
+        only the chat widget. It does not include document upload.
+      </p>
+    </main>
+    <script
+      src="/widget.js"
+      data-name="Handbook"
+      data-color="#2f5d50"
+      data-logo="/mark.svg"
+      defer
+    ></script>
+  </body>
+</html>
